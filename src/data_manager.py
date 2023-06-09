@@ -2,7 +2,8 @@ import json
 import os
 from datetime import datetime
 
-from src.const import *
+from src.constants_and_globals import *
+
 
 def update_json(target_note_id: int, new_name='default_name', new_text='default_text', delete=False, read=False):
     with open(data_filename, 'r', encoding=json_encoding) as f:
@@ -25,6 +26,7 @@ def update_json(target_note_id: int, new_name='default_name', new_text='default_
     with open(data_filename, 'w', encoding=json_encoding) as f:
         json.dump(all_notes, f, indent=4)
 
+
 def append_to_json(name, text):
     global LAST_USED_MAX_ID
     LAST_USED_MAX_ID += 1
@@ -45,6 +47,7 @@ def append_to_json(name, text):
             json.dump(all_notes, f, indent=4)
 
         print("Data appended")
+
 
 def import_from_json():
     if os.path.isfile(data_filename) is False:

@@ -1,10 +1,10 @@
 from tkinter import *
 
-import src 
+import src
 
 window = Tk()
-window.title("NoteApp")
-window.geometry("800x600")
+window.title("Note")
+window.geometry("600x400")
 
 table_frame = Frame(window)
 table_frame.pack(anchor=N)

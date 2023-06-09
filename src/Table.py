@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 
-import src.data_manager
+import src.Data_manager
 
 
 class Table:

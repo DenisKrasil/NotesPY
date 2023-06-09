@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 
-import src.data_manager
+import src.Data_manager
 
 
 class Buttons:
